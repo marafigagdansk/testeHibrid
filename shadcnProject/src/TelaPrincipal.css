@@ -14,13 +14,13 @@ body {
     flex-direction: column;
 }
 
-.header {
+.header-area {
     display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 3.5vw;
     background-color: blue;
-
+    justify-content: right;
+    
 }
 
 .infoArea {
@@ -28,6 +28,5 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vw;
-    background-color: SZ\;
 }
 

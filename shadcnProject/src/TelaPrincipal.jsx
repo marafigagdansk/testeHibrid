@@ -31,13 +31,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+import "./TelaPrincipal.css"
 function TelaPrincipal() {
 
   return (
     <>
         <div className='geral'>
-            <div className='header'>
-                      <DropdownMenu>
+            <div className='header-area'>
+
+              <div className="menu">
+              <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline">Open</Button>
                 </DropdownMenuTrigger>
@@ -122,9 +125,11 @@ function TelaPrincipal() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
+              </div>
+                      
             </div>
             
-            <div className='infoArea'>
+            <div className='info-area'>
               <h1>info</h1>
             </div>
         </div>
