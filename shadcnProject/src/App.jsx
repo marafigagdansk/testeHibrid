@@ -17,7 +17,7 @@ function App() {
       <div className='right'>
         <div className='form'>
           <Label htmlFor="user-code">Nome do Usuário</Label>
-          <Input id="user-code" type="number" placeholder="username" aria-label="Código do Usuário" />
+          <Input id="user-code" type="name" placeholder="username" aria-label="Código do Usuário" />
 
           <Label htmlFor="user-password">Senha do Usuário</Label>
           <Input id="user-password" type="password" placeholder="Senha" aria-label="Senha do Usuário" />
