@@ -43,16 +43,16 @@ function TelaPrincipal() {
       <div className='geral'>
         <div className='header-area'>
           <div className={`search-bar ${searchOpen ? 'active' : ''}`}>
-            <input type="text" className="search-input" placeholder="Search..." />
             <button className="search-icon" onClick={toggleSearch}>
               <Search />
             </button>
+            <input type="text" className="search-input" placeholder="Search..." />
           </div>
 
           <div className="menu">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline">Open</Button>
+                <Button variant="outline">Menu</Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel>User Name</DropdownMenuLabel>
@@ -121,7 +121,7 @@ function TelaPrincipal() {
         </div>
 
         <div className='info-area'>
-          <h1>info</h1>
+          
         </div>
         
         <div className='footer-area'>

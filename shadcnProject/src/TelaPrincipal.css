@@ -21,7 +21,7 @@ body {
     background-color: gray;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2px;
+    padding: 0 3px;
 }
 
 
@@ -70,6 +70,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vw;
+    background: linear-gradient(90deg, rgba(67,155,220,1) 0%, rgba(0,96,166,1) 100%);
 }
 
 .footer-area {
