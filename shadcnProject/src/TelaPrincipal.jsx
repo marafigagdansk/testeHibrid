@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Github,
   LifeBuoy,
@@ -32,8 +33,13 @@ import {
 import "./TelaPrincipal.css"
 
 function TelaPrincipal() {
-  const [searchOpen, setSearchOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const handleAddPatient = () => {
+    navigate('/cadastrar-paciente');
+  };
+
+  const [searchOpen, setSearchOpen] = useState(false);
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
   }
@@ -96,7 +102,7 @@ function TelaPrincipal() {
                   </DropdownMenuSub>
                   <DropdownMenuItem>
                     <Plus className="mr-2 h-4 w-4" />
-                    <span>Novo Paciente</span>
+                    <span onClick={handleAddPatient}>Novo Paciente</span>
                     <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
@@ -121,7 +127,6 @@ function TelaPrincipal() {
         </div>
 
         <div className='info-area'>
-          
         </div>
         
         <div className='footer-area'>
