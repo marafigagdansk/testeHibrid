@@ -38,7 +38,7 @@ const CadastroPaciente = () => {
 
   const navigate = useNavigate();
   const handleAddPatient = () => {
-    navigate('/tela-principal');
+    navigate('/');
   };
 
   return (

@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/tela-principal" element={<TelaPrincipal />} />
+        <Route path="/" element={<TelaPrincipal />} />
         <Route path="/cadastrar-paciente" element={<CadastroPaciente />} />
       </Routes>
     </Router>

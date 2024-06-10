@@ -67,12 +67,12 @@ function TelaPrincipal() {
                   <DropdownMenuItem>
                     <User className="mr-2 h-4 w-4" />
                     <span>Profile</span>
-                    <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                    <DropdownMenuShortcut>⇧+P</DropdownMenuShortcut>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Settings className="mr-2 h-4 w-4" />
                     <span>Settings</span>
-                    <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                    <DropdownMenuShortcut>⇧+S</DropdownMenuShortcut>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
@@ -103,7 +103,7 @@ function TelaPrincipal() {
                   <DropdownMenuItem>
                     <Plus className="mr-2 h-4 w-4" />
                     <span onClick={handleAddPatient}>Novo Paciente</span>
-                    <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                    <DropdownMenuShortcut>⇧+T</DropdownMenuShortcut>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
