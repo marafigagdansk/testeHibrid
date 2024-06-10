@@ -38,13 +38,14 @@ const CadastroPaciente = () => {
 
   const navigate = useNavigate();
   const handleAddPatient = () => {
-    navigate('/cadastrar-paciente');
+    navigate('/tela-principal');
   };
 
   return (
     <>
       <div className='geral'>
-        <div className='header-area'>
+        <div className='header'>
+        <Button variant="ghost" onClick={handleAddPatient} className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Cards</Button>
         <div className="menu">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
