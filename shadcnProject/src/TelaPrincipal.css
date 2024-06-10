@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-.header-area {
+.header {
     display: flex;
     width: 100vw;
     height: 3.5vw;

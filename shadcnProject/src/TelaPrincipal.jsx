@@ -47,7 +47,7 @@ function TelaPrincipal() {
   return (
     <>
       <div className='geral'>
-        <div className='header-area'>
+        <div className='header'>
           <div className={`search-bar ${searchOpen ? 'active' : ''}`}>
             <button className="search-icon" onClick={toggleSearch}>
               <Search />
