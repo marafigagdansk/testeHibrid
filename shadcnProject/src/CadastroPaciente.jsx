@@ -118,7 +118,7 @@ const CadastroPaciente = () => {
         </div>
       
         <div className="form-container">
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Ficha do Paciente</h2>
+          <h2 className="scroll-m-20Form border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Ficha do Paciente</h2>
           <form>
             <div className="form-group">
               <Label htmlFor="name">Nome</Label>
