@@ -2,6 +2,7 @@ import { Button } from './components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from '@/components/ui/checkbox'
+import { Textarea } from "@/components/ui/textarea"
 
 import { useNavigate } from 'react-router-dom';
 import {
@@ -35,7 +36,6 @@ import {
 import './CadastroPaciente.css'
 
 const CadastroPaciente = () => {
-
   const navigate = useNavigate();
   const handleAddPatient = () => {
     navigate('/');
@@ -45,8 +45,14 @@ const CadastroPaciente = () => {
     <>
       <div className='geral'>
         <div className='header'>
-        <Button variant="ghost" onClick={handleAddPatient} className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Cards</Button>
-        <div className="menu">
+          <Button
+            variant="ghost"
+            onClick={handleAddPatient}
+            className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+          >
+            Cards
+          </Button>
+          <div className="menu">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline">Menu</Button>
@@ -116,55 +122,115 @@ const CadastroPaciente = () => {
             </DropdownMenu>
           </div>
         </div>
-      
-        <div className="form-container">
-          <h2 className="scroll-m-20Form border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">Ficha do Paciente</h2>
-          <form>
-            <div className="form-group">
-              <Label htmlFor="name">Nome</Label>
-              <div className="name-inputs">
-                <Input type="text" id="firstName" placeholder="Nome" />
-                <Input type="text" id="lastName" placeholder="Sobrenome" />
-              </div>
-            </div>
-            <div className="form-group">
-              <Label htmlFor="birthDate">Data de Nascimento</Label>
-              <Input type="date" id="birthDate" placeholder="MM-DD-YYYY" />
-            </div>
-            <div className="form-group">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="example@example.com" />
-            </div>
-            <div className="form-group">
-              <Label>Sexo</Label>
-                <div className="radio-group">
-                  <Checkbox id="terms" />
-                  <Label htmlFor="terms">Feminino</Label>
-                  <Checkbox id="terms" />
-                  <Label htmlFor="terms">Masculino</Label>
 
-                </div>
-            </div>
-            <div className="form-group">
-              <Label htmlFor="age">Idade</Label>
-              <Input type="text" id="age" placeholder="ex: 23" />
-            </div>
-            <div className="form-group">
-              <Label htmlFor="height">Altura</Label>
-              <Input type="text" id="height" />
-            </div>
-            <div className="form-group">
-              <Label htmlFor="profession">Profissão</Label>
-              <Input type="text" id="profession" />
-            </div>
-            <div className="form-group">
-              <Button  type="submit">Próximo</Button >
-            </div>
+        <div className="container">
+          <h1>Adicionar Paciente</h1>
+          <form>
+            <h2>Dados Pessoais</h2>
+            <Label>Nome:</Label>
+            <Input type="text" name="nome" />
+            
+            <Label>Idade:</Label>
+            <Input type="number" name="idade" />
+            
+            <h2>Exames</h2>
+            <Label>Anamnese:</Label>
+            <Textarea name="anamnese" />
+            
+            <Label>Teste MEEM:</Label>
+            <Input type="checkbox" name="testeMeem" />
+            
+            <Label>Histórico de Doenças:</Label>
+            <Textarea name="historicoDoencas" />
+            
+            <Label>Dados Vitais:</Label>
+            <Textarea name="dadosVitais" />
+            
+            <h2>Exames Físicos</h2>
+            <Label>PA Sentado:</Label>
+            <Input type="text" name="paSentado" />
+            
+            <Label>PA Ortostatismo:</Label>
+            <Input type="text" name="paOrtostatismo" />
+            
+            <Label>FC:</Label>
+            <Input type="text" name="fc" />
+            
+            <Label>FR:</Label>
+            <Input type="text" name="fr" />
+            
+            <Label>Inspeção:</Label>
+            <Textarea name="inspecao" />
+            
+            <Label>Palpação:</Label>
+            <Textarea name="palpacao" />
+            
+            <Label>Avaliação Sensorial - Propriocepção:</Label>
+            <Textarea name="propriocepcao" />
+            
+            <h3>Amplitude de Movimento</h3>
+            <Label>Direito:</Label>
+            <Input type="text" name="amplitudeMovimento.direito" />
+            
+            <Label>Esquerdo:</Label>
+            <Input type="text" name="amplitudeMovimento.esquerdo" />
+            
+            <Label>Comprimento Muscular:</Label>
+            <Input type="text" name="comprimentoMuscular" />
+            
+            <h3>Força Muscular</h3>
+            <Input type="text" placeholder="Exercício" name="forcaMuscular" />
+            
+            <h3>Equilíbrio</h3>
+            <Input type="text" placeholder="Exercício" name="equilibrio" />
+            
+            <Label>Observação:</Label>
+            <Textarea name="observacaoEquilibrio" />
+            
+            <h3>Funcionalidade</h3>
+            <Input type="text" placeholder="Exercício" name="funcionalidade" />
+            
+            <Label>Observação:</Label>
+            <Textarea name="observacaoFuncionalidade" />
+            
+            <Label>Marcha Texto:</Label>
+            <Textarea name="marchaTexto" />
+            
+            <Label>Dispositivo de Auxílio à Marcha:</Label>
+            <Input type="text" name="auxilioMarcha" />
+            
+            <Label>Velocidade de Marcha:</Label>
+            <Input type="text" name="velocidadeMarcha" />
+            
+            <Label>Comprimento:</Label>
+            <Input type="text" name="comprimentoMarcha" />
+            
+            <Label>Avaliação Postural:</Label>
+            <Textarea name="avaliacaoPostural" />
+            
+            <Label>Avaliação Complementares:</Label>
+            <Textarea name="avaliacaoComplementares" />
+            
+            <Label>Diagnóstico:</Label>
+            <Textarea name="diagnostico" />
+            
+            <Label>Fisioterapêutico:</Label>
+            <Textarea name="fisioterapeutico" />
+            
+            <Label>Prognóstico:</Label>
+            <Textarea name="prognostico" />
+            
+            <Label>Objetivo do Tratamento:</Label>
+            <Textarea name="objetivoTratamento" />
+            
+            <Label>Programa de Tratamento:</Label>
+            <Textarea name="programaTratamento" />
+            
+            <button type="submit">Adicionar Paciente</button>
           </form>
         </div>
       </div>
     </>
-    
   );
 };
 
