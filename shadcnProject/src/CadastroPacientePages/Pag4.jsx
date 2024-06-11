@@ -1,7 +1,6 @@
-import { Button } from './components/ui/button'
+import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Checkbox } from '@/components/ui/checkbox'
 import { Textarea } from "@/components/ui/textarea"
 
 import { useNavigate } from 'react-router-dom';
@@ -43,9 +42,9 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination"
 
-import './CadastroPaciente.css'
+import '@/CadastroPaciente.css'
 
-const CadastroPaciente = () => {
+const Pag2 = () => {
   const navigate = useNavigate();
 
   const handleAddPatient = () => {
@@ -56,19 +55,17 @@ const CadastroPaciente = () => {
     navigate('/cadastrar-paciente');
   };
 
-
-  const paginationPag2 = () => {
+  const paginationPag2= () => {
     navigate('/pag2');
   };
 
-  const paginationPag3 = () => {
+  const paginationPag3= () => {
     navigate('/pag3');
-  };
+  }
 
-  const paginationPag4 = () => {
+  const paginationPag4= () => {
     navigate('/pag4');
   };
-
 
 
   return (
@@ -154,53 +151,8 @@ const CadastroPaciente = () => {
         </div>
 
         <div className="container">
-          <h1>Adicionar Paciente</h1>
           <form>
-            <h2>Dados Pessoais</h2>
-            <Label>Nome:</Label>
-            <Input type="text" name="nome" />
-            
-            <Label>Idade:</Label>
-            <Input type="number" name="idade" />
-            
-            <h2>Exames</h2>
-            <Label>Anamnese:</Label>
-            <Textarea name="anamnese" />
-            
-            <Label>Teste MEEM:</Label>
-            <Checkbox />
-            
-            <Label>Histórico de Doenças:</Label>
-            <Textarea name="historicoDoencas" />
-            
-            <Label>Dados Vitais:</Label>
-            <Textarea name="dadosVitais" />
-            {/* cabo */}
-            <h2>Exames Físicos</h2>
-            <Label>PA Sentado:</Label>
-            <Input type="text" name="paSentado" />
-            
-            <Label>PA Ortostatismo:</Label>
-            <Input type="text" name="paOrtostatismo" />
-            
-            <Label>FC:</Label>
-            <Input type="text" name="fc" />
-            
-            <Label>FR:</Label>
-            <Input type="text" name="fr" />
-            
-            <Label>Inspeção:</Label>
-            <Textarea name="inspecao" />
-            
-            <Label>Palpação:</Label>
-            <Textarea name="palpacao" />
-            
-            <Label>Avaliação Sensorial - Propriocepção:</Label>
-            <Textarea name="propriocepcao" />
-
-            {/* cabo */}
-            
-            <h3>Amplitude de Movimento</h3>
+          <h3>Amplitude de Movimento</h3>
             <Label>Direito:</Label>
             <Input type="text" name="amplitudeMovimento.direito" />
             
@@ -225,42 +177,6 @@ const CadastroPaciente = () => {
             <Label>Observação:</Label>
             <Textarea name="observacaoFuncionalidade" />
 
-            {/* cabo */}
-            
-            <Label>Marcha Texto:</Label>
-            <Textarea name="marchaTexto" />
-            
-            <Label>Dispositivo de Auxílio à Marcha:</Label>
-            <Input type="text" name="auxilioMarcha" />
-            
-            <Label>Velocidade de Marcha:</Label>
-            <Input type="text" name="velocidadeMarcha" />
-            
-            <Label>Comprimento:</Label>
-            <Input type="text" name="comprimentoMarcha" />
-            
-            <Label>Avaliação Postural:</Label>
-            <Textarea name="avaliacaoPostural" />
-            
-            <Label>Avaliação Complementares:</Label>
-            <Textarea name="avaliacaoComplementares" />
-            
-            <Label>Diagnóstico:</Label>
-            <Textarea name="diagnostico" />
-            
-            <Label>Fisioterapêutico:</Label>
-            <Textarea name="fisioterapeutico" />
-            
-            <Label>Prognóstico:</Label>
-            <Textarea name="prognostico" />
-            
-            <Label>Objetivo do Tratamento:</Label>
-            <Textarea name="objetivoTratamento" />
-            
-            <Label>Programa de Tratamento:</Label>
-            <Textarea name="programaTratamento" />
-            
-            <button type="submit">Adicionar Paciente</button>
           </form>
         </div>
         <div className='paginationArea'>
@@ -279,10 +195,7 @@ const CadastroPaciente = () => {
                 <PaginationLink onClick={paginationPag3}>3</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink onClick={paginationPag4}>4</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationEllipsis />
+              <PaginationLink onClick={paginationPag4}>4</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" />
@@ -295,4 +208,4 @@ const CadastroPaciente = () => {
   );
 };
 
-export default CadastroPaciente;
+export default Pag2;
