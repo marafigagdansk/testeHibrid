@@ -35,7 +35,6 @@ import {
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -44,7 +43,7 @@ import {
 
 import '@/CadastroPaciente.css'
 
-const Pag2 = () => {
+const Pag4 = () => {
   const navigate = useNavigate();
 
   const handleAddPatient = () => {
@@ -152,30 +151,40 @@ const Pag2 = () => {
 
         <div className="container">
           <form>
-          <h3>Amplitude de Movimento</h3>
-            <Label>Direito:</Label>
-            <Input type="text" name="amplitudeMovimento.direito" />
+          <Label>Marcha Texto:</Label>
+            <Textarea name="marchaTexto" />
             
-            <Label>Esquerdo:</Label>
-            <Input type="text" name="amplitudeMovimento.esquerdo" />
+            <Label>Dispositivo de Auxílio à Marcha:</Label>
+            <Input type="text" name="auxilioMarcha" />
             
-            <Label>Comprimento Muscular:</Label>
-            <Input type="text" name="comprimentoMuscular" />
+            <Label>Velocidade de Marcha:</Label>
+            <Input type="text" name="velocidadeMarcha" />
             
-            <h3>Força Muscular</h3>
-            <Input type="text" placeholder="Exercício" name="forcaMuscular" />
+            <Label>Comprimento:</Label>
+            <Input type="text" name="comprimentoMarcha" />
             
-            <h3>Equilíbrio</h3>
-            <Input type="text" placeholder="Exercício" name="equilibrio" />
+            <Label>Avaliação Postural:</Label>
+            <Textarea name="avaliacaoPostural" />
             
-            <Label>Observação:</Label>
-            <Textarea name="observacaoEquilibrio" />
+            <Label>Avaliação Complementares:</Label>
+            <Textarea name="avaliacaoComplementares" />
             
-            <h3>Funcionalidade</h3>
-            <Input type="text" placeholder="Exercício" name="funcionalidade" />
+            <Label>Diagnóstico:</Label>
+            <Textarea name="diagnostico" />
             
-            <Label>Observação:</Label>
-            <Textarea name="observacaoFuncionalidade" />
+            <Label>Fisioterapêutico:</Label>
+            <Textarea name="fisioterapeutico" />
+            
+            <Label>Prognóstico:</Label>
+            <Textarea name="prognostico" />
+            
+            <Label>Objetivo do Tratamento:</Label>
+            <Textarea name="objetivoTratamento" />
+            
+            <Label>Programa de Tratamento:</Label>
+            <Textarea name="programaTratamento" />
+            
+            <button type="submit">Adicionar Paciente</button>
 
           </form>
         </div>
@@ -208,4 +217,4 @@ const Pag2 = () => {
   );
 };
 
-export default Pag2;
+export default Pag4;

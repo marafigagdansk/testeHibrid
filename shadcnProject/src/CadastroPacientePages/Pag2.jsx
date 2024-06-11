@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Checkbox } from '@/components/ui/checkbox'
 import { Textarea } from "@/components/ui/textarea"
 
 import { useNavigate } from 'react-router-dom';
@@ -36,7 +35,6 @@ import {
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -152,25 +150,28 @@ const Pag2 = () => {
 
         <div className="container">
           <form>
-            <h2>Dados Pessoais</h2>
-            <Label>Nome:</Label>
-            <Input type="text" name="nome" />
+          <h2>Exames Físicos</h2>
+            <Label>PA Sentado:</Label>
+            <Input type="text" name="paSentado" />
             
-            <Label>Idade:</Label>
-            <Input type="number" name="idade" />
+            <Label>PA Ortostatismo:</Label>
+            <Input type="text" name="paOrtostatismo" />
             
-            <h2>Exames</h2>
-            <Label>Anamnese:</Label>
-            <Textarea name="anamnese" />
+            <Label>FC:</Label>
+            <Input type="text" name="fc" />
             
-            <Label>Teste MEEM:</Label>
-            <Checkbox />
+            <Label>FR:</Label>
+            <Input type="text" name="fr" />
             
-            <Label>Histórico de Doenças:</Label>
-            <Textarea name="historicoDoencas" />
+            <Label>Inspeção:</Label>
+            <Textarea name="inspecao" />
             
-            <Label>Dados Vitais:</Label>
-            <Textarea name="dadosVitais" />
+            <Label>Palpação:</Label>
+            <Textarea name="palpacao" />
+            
+            <Label>Avaliação Sensorial - Propriocepção:</Label>
+            <Textarea name="propriocepcao" />
+
           </form>
         </div>
         <div className='paginationArea'>

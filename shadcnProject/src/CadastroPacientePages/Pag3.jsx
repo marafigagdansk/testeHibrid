@@ -35,7 +35,6 @@ import {
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -44,7 +43,7 @@ import {
 
 import '@/CadastroPaciente.css'
 
-const Pag2 = () => {
+const Pag3 = () => {
   const navigate = useNavigate();
 
   const handleAddPatient = () => {
@@ -153,27 +152,31 @@ const Pag2 = () => {
 
         <div className="container">
           <form>
-          <h2>Exames Físicos</h2>
-            <Label>PA Sentado:</Label>
-            <Input type="text" name="paSentado" />
+          <h3>Amplitude de Movimento</h3>
+            <Label>Direito:</Label>
+            <Input type="text" name="amplitudeMovimento.direito" />
             
-            <Label>PA Ortostatismo:</Label>
-            <Input type="text" name="paOrtostatismo" />
+            <Label>Esquerdo:</Label>
+            <Input type="text" name="amplitudeMovimento.esquerdo" />
             
-            <Label>FC:</Label>
-            <Input type="text" name="fc" />
+            <Label>Comprimento Muscular:</Label>
+            <Input type="text" name="comprimentoMuscular" />
             
-            <Label>FR:</Label>
-            <Input type="text" name="fr" />
+            <h3>Força Muscular</h3>
+            <Input type="text" placeholder="Exercício" name="forcaMuscular" />
             
-            <Label>Inspeção:</Label>
-            <Textarea name="inspecao" />
+            <h3>Equilíbrio</h3>
+            <Input type="text" placeholder="Exercício" name="equilibrio" />
             
-            <Label>Palpação:</Label>
-            <Textarea name="palpacao" />
+            <Label>Observação:</Label>
+            <Textarea name="observacaoEquilibrio" />
             
-            <Label>Avaliação Sensorial - Propriocepção:</Label>
-            <Textarea name="propriocepcao" />
+            <h3>Funcionalidade</h3>
+            <Input type="text" placeholder="Exercício" name="funcionalidade" />
+            
+            <Label>Observação:</Label>
+            <Textarea name="observacaoFuncionalidade" />
+            
           </form>
         </div>
         <div className='paginationArea'>
@@ -205,4 +208,4 @@ const Pag2 = () => {
   );
 };
 
-export default Pag2;
+export default Pag3;

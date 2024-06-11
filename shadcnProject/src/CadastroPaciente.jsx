@@ -36,7 +36,6 @@ import {
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -68,8 +67,6 @@ const CadastroPaciente = () => {
   const paginationPag4 = () => {
     navigate('/pag4');
   };
-
-
 
   return (
     <>
@@ -175,122 +172,39 @@ const CadastroPaciente = () => {
             
             <Label>Dados Vitais:</Label>
             <Textarea name="dadosVitais" />
-            {/* cabo */}
-            <h2>Exames Físicos</h2>
-            <Label>PA Sentado:</Label>
-            <Input type="text" name="paSentado" />
-            
-            <Label>PA Ortostatismo:</Label>
-            <Input type="text" name="paOrtostatismo" />
-            
-            <Label>FC:</Label>
-            <Input type="text" name="fc" />
-            
-            <Label>FR:</Label>
-            <Input type="text" name="fr" />
-            
-            <Label>Inspeção:</Label>
-            <Textarea name="inspecao" />
-            
-            <Label>Palpação:</Label>
-            <Textarea name="palpacao" />
-            
-            <Label>Avaliação Sensorial - Propriocepção:</Label>
-            <Textarea name="propriocepcao" />
 
             {/* cabo */}
-            
-            <h3>Amplitude de Movimento</h3>
-            <Label>Direito:</Label>
-            <Input type="text" name="amplitudeMovimento.direito" />
-            
-            <Label>Esquerdo:</Label>
-            <Input type="text" name="amplitudeMovimento.esquerdo" />
-            
-            <Label>Comprimento Muscular:</Label>
-            <Input type="text" name="comprimentoMuscular" />
-            
-            <h3>Força Muscular</h3>
-            <Input type="text" placeholder="Exercício" name="forcaMuscular" />
-            
-            <h3>Equilíbrio</h3>
-            <Input type="text" placeholder="Exercício" name="equilibrio" />
-            
-            <Label>Observação:</Label>
-            <Textarea name="observacaoEquilibrio" />
-            
-            <h3>Funcionalidade</h3>
-            <Input type="text" placeholder="Exercício" name="funcionalidade" />
-            
-            <Label>Observação:</Label>
-            <Textarea name="observacaoFuncionalidade" />
 
-            {/* cabo */}
-            
-            <Label>Marcha Texto:</Label>
-            <Textarea name="marchaTexto" />
-            
-            <Label>Dispositivo de Auxílio à Marcha:</Label>
-            <Input type="text" name="auxilioMarcha" />
-            
-            <Label>Velocidade de Marcha:</Label>
-            <Input type="text" name="velocidadeMarcha" />
-            
-            <Label>Comprimento:</Label>
-            <Input type="text" name="comprimentoMarcha" />
-            
-            <Label>Avaliação Postural:</Label>
-            <Textarea name="avaliacaoPostural" />
-            
-            <Label>Avaliação Complementares:</Label>
-            <Textarea name="avaliacaoComplementares" />
-            
-            <Label>Diagnóstico:</Label>
-            <Textarea name="diagnostico" />
-            
-            <Label>Fisioterapêutico:</Label>
-            <Textarea name="fisioterapeutico" />
-            
-            <Label>Prognóstico:</Label>
-            <Textarea name="prognostico" />
-            
-            <Label>Objetivo do Tratamento:</Label>
-            <Textarea name="objetivoTratamento" />
-            
-            <Label>Programa de Tratamento:</Label>
-            <Textarea name="programaTratamento" />
-            
-            <button type="submit">Adicionar Paciente</button>
           </form>
         </div>
         <div className='paginationArea'>
-                  <Pagination>
-            <PaginationContent>
-              <PaginationItem>
-                <PaginationPrevious href="#" />
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink onClick={paginationPag1}>1</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink onClick={paginationPag2}>2</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink onClick={paginationPag3}>3</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationLink onClick={paginationPag4}>4</PaginationLink>
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationEllipsis />
-              </PaginationItem>
-              <PaginationItem>
-                <PaginationNext href="#" />
-              </PaginationItem>
-            </PaginationContent>
-          </Pagination>
-        </div>
+          <div className='pagination'>
+                    <Pagination>
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious href="#" />
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink onClick={paginationPag1}>1</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink onClick={paginationPag2}>2</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink onClick={paginationPag3}>3</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink onClick={paginationPag4}>4</PaginationLink>
+                </PaginationItem> 
+                <PaginationItem>
+                  <PaginationNext href="#" />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
+          </div>
       </div>
+        </div>
+        
     </>
   );
 };
