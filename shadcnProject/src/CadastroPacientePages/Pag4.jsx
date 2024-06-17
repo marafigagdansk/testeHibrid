@@ -167,7 +167,7 @@ const Pag4 = () => {
             <Label>PROGRAMA DE TRATAMENTO</Label>
             <Textarea name="programaTratamento" />
             
-            <button type="submit">Adicionar Paciente</button>
+            <Button>Adicionar Paciente</Button>
 
           </form>
         </div>

@@ -173,7 +173,9 @@ const Pag2 = () => {
               <Textarea name="propriocepcao"></Textarea>
               <div className="funcaoAplitude">
                   <h3>Amplitude de Movimento</h3>
-                  {/* <!-- função aqui --> */}
+                  <div className='funcaoNova'>
+                    {/* <!-- função aqui --> */}
+                  </div>
               </div>
           </form>
 
