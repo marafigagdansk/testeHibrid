@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 
@@ -54,18 +53,17 @@ const Pag4 = () => {
     navigate('/cadastrar-paciente');
   };
 
-  const paginationPag2= () => {
+  const paginationPag2 = () => {
     navigate('/pag2');
   };
 
-  const paginationPag3= () => {
+  const paginationPag3 = () => {
     navigate('/pag3');
-  }
-
-  const paginationPag4= () => {
-    navigate('/pag4');
   };
 
+  const paginationPag4 = () => {
+    navigate('/pag4');
+  };
 
   return (
     <>
@@ -173,8 +171,9 @@ const Pag4 = () => {
 
           </form>
         </div>
+
         <div className='paginationArea'>
-                  <Pagination>
+          <Pagination>
             <PaginationContent>
               <PaginationItem>
                 <PaginationPrevious href="#" />
@@ -189,7 +188,7 @@ const Pag4 = () => {
                 <PaginationLink onClick={paginationPag3}>3</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-              <PaginationLink onClick={paginationPag4}>4</PaginationLink>
+                <PaginationLink onClick={paginationPag4}>4</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" />

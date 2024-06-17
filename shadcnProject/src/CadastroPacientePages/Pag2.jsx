@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-
 import { useNavigate } from 'react-router-dom';
 import {
   Github,
@@ -16,7 +15,6 @@ import {
   User,
   UserPlus,
 } from "lucide-react"
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,7 +29,6 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
 import {
   Pagination,
   PaginationContent,
@@ -40,7 +37,6 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination"
-
 import '@/CadastroPaciente.css'
 
 const Pag2 = () => {
@@ -54,15 +50,15 @@ const Pag2 = () => {
     navigate('/cadastrar-paciente');
   };
 
-  const paginationPag2= () => {
+  const paginationPag2 = () => {
     navigate('/pag2');
   };
 
-  const paginationPag3= () => {
+  const paginationPag3 = () => {
     navigate('/pag3');
   };
 
-  const paginationPag4= () => {
+  const paginationPag4 = () => {
     navigate('/pag4');
   };
 
@@ -149,40 +145,42 @@ const Pag2 = () => {
         </div>
 
         <div className="container">
-          <form>
-          <h2>EXAME FÍSICO</h2>
-          <div className='columnArea'>
-            <h3>DADOS VITAIS</h3>
- <Label>PA Sentado:</Label>
-            <Input type="text" name="paSentado" />
-            
-            <Label>PA Ortostatismo:</Label>
-            <Input type="text" name="paOrtostatismo" />
-            
-            <Label>FC:</Label>
-            <Input type="text" name="fc" />
-            
-            <Label>FR:</Label>
-            <Input type="text" name="fr" />
-          </div>
-          <Label>INSPEÇÃO</Label>
-            <Textarea name="inspecao" />
-            
-            <Label>PALPAÇÃO</Label>
-            <Textarea name="palpacao" />
-            
-            <Label>ACALIAÇÃO SENSORIAL - Propriocepção (Senso de Posição Articular):</Label>
-            <Textarea name="propriocepcao" />
-
-          <div className='funcaoAplitude'>
-          <h3>Amplitude de Movimento</h3>
-          {/* função aqui */}
-
-          </div>
+                  <form>
+              <h2>EXAME FÍSICO</h2>
+              <div className="columnArea">
+                  <div>
+                      <Label>PA Sentado:</Label>
+                      <Input type="text" name="paSentado" />
+                  </div>
+                  <div>
+                      <Label>PA Ortostatismo:</Label>
+                      <Input type="text" name="paOrtostatismo" />
+                  </div>
+                  <div>
+                      <Label>FC:</Label>
+                      <Input type="text" name="fc" />
+                  </div>
+                  <div>
+                      <Label>FR:</Label>
+                      <Input type="text" name="fr" />
+                  </div>
+              </div>
+              <Label>INSPEÇÃO</Label>
+              <Textarea name="inspecao"></Textarea>
+              <Label>PALPAÇÃO</Label>
+              <Textarea name="palpacao"></Textarea>
+              <Label>ACALIAÇÃO SENSORIAL - Propriocepção (Senso de Posição Articular):</Label>
+              <Textarea name="propriocepcao"></Textarea>
+              <div className="funcaoAplitude">
+                  <h3>Amplitude de Movimento</h3>
+                  {/* <!-- função aqui --> */}
+              </div>
           </form>
+
         </div>
+
         <div className='paginationArea'>
-                  <Pagination>
+          <Pagination>
             <PaginationContent>
               <PaginationItem>
                 <PaginationPrevious href="#" />
@@ -197,9 +195,7 @@ const Pag2 = () => {
                 <PaginationLink onClick={paginationPag3}>3</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-              <PaginationItem>
                 <PaginationLink onClick={paginationPag4}>4</PaginationLink>
-              </PaginationItem>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" />

@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-
 import { useNavigate } from 'react-router-dom';
 import {
   Github,
@@ -16,7 +15,6 @@ import {
   User,
   UserPlus,
 } from "lucide-react"
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,7 +29,6 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
 import {
   Pagination,
   PaginationContent,
@@ -40,7 +37,6 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination"
-
 import '@/CadastroPaciente.css'
 
 const Pag3 = () => {
@@ -54,19 +50,17 @@ const Pag3 = () => {
     navigate('/cadastrar-paciente');
   };
 
-  const paginationPag2= () => {
+  const paginationPag2 = () => {
     navigate('/pag2');
   };
 
-  const paginationPag3= () => {
+  const paginationPag3 = () => {
     navigate('/pag3');
   };
 
-  const paginationPag4= () => {
+  const paginationPag4 = () => {
     navigate('/pag4');
   };
-
-
 
   return (
     <>
@@ -156,42 +150,78 @@ const Pag3 = () => {
             <Textarea name="comprimentoMuscular" />
             
             <Label>FORÇA MUSCULAR</Label>
-            <Textarea  name="forcaMuscular" />
+            <Textarea name="forcaMuscular" />
             
-            <h3>EQUILIBRIO</h3>
-            <div className='containerChange'>
-            <Input type="text" placeholder="Sistema Vestibular"/>
-            <Input type="text" placeholder="TUG Tarefa 1"/>
-            <Input type="text" placeholder="POMA Tinetti Equilíbrio"/>
-            <Input type="text" placeholder="Marcha"/>
-            <Input type="text" placeholder="Total"/>
-            <Input type="text" placeholder="Teste Apoio Unipodal D"/>
-            <Input type="text" placeholder="Esquerdo"/>
-            <Input type="text" placeholder="Teste Caminhada Tande"/>
+            <h3>EQUILÍBRIO</h3>
+            <div className="containerChange">
+              <div className="row">
+                <Label>Sistema Vestibular – Romberg:</Label>
+                <Input type="text" />
+              </div>
+              <div className="row">
+                <Label>TUG Tarefa 1:</Label>
+                <Input type="text"/>
+              </div>
+              <div className="row">
+                <Label>POMA Tinetti Equilíbrio:</Label>
+                <Input type="text"/>
+                <Label>Marcha:</Label>
+                <Input type="text"/>
+                <Label>Total:</Label>
+                <Input type="text" />
+              </div>
+              <div className="row">
+                <Label>Teste Apoio Unipodal D:</Label>
+                <Input type="text" />
+                <Label>Esquerdo:</Label>
+                <Input type="text"/>
+              </div>
+              <div className="row">
+                <Label>Teste Caminhada Tandem:</Label>
+                <Input type="text" placeholder="" />
+              </div>
             </div>
             
             <Label>Interpretação/observação</Label>
-            <Textarea/>
+            <Textarea />
             
             <h3>FUNCIONALIDADE</h3>
-            <Input type="text" placeholder="Escala de Lawton"/>
-            <Input type="text" placeholder="Indice de Barthel"/>
-            <Label>Interpretação/observação</Label>
-            <Textarea name="observacaoFuncionalidade" />
-            
-            <Label>Observação:</Label>
-            <Textarea/>
+            <div className="funcionalidade">
+              <div className="row">
+                <Label>Escala de Lawton:</Label>
+                <Input type="text"/>
+              </div>
+              <div className="row">
+                <Label>Índice de Barthel:</Label>
+                <Input type="text"/>
+              </div>
+            </div>
+            <Label>Interpretação/Observações</Label>
+            <Textarea name="observacaoFuncionalidade"></Textarea>
+
             <h3>MARCHA</h3>
-            <Textarea/>
-            <Input type="text" placeholder="Dispositivo de Auxílio à Marcha"/>
-            <Input type="text" placeholder="Velocidade da Marcha"/>
-            <Label>Comprimento da Passada:</Label>
-            <Input type="text" placeholder="Direito"></Input>
-            <Input type="text" placeholder="Esquerdo"></Input>
+            <Label>Observação:</Label>
+            <Textarea></Textarea>
+            <div className="marcha">
+              <div className="row">
+                <Label>Dispositivo de Auxílio à Marcha:</Label>
+                <Input type="text"/>
+              </div>
+              <div className="row">
+                <Label>Velocidade da Marcha:</Label>
+                <Input type="text"/>
+              </div>
+              <div className="row">
+                <Label>Comprimento da Passada:</Label>
+                <Input type="text" placeholder="Direito" />
+                <Input type="text" placeholder="Esquerdo" />
+              </div>
+            </div>
           </form>
         </div>
+
         <div className='paginationArea'>
-                  <Pagination>
+          <Pagination>
             <PaginationContent>
               <PaginationItem>
                 <PaginationPrevious href="#" />
@@ -206,7 +236,7 @@ const Pag3 = () => {
                 <PaginationLink onClick={paginationPag3}>3</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-              <PaginationLink onClick={paginationPag4}>4</PaginationLink>
+                <PaginationLink onClick={paginationPag4}>4</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext href="#" />
