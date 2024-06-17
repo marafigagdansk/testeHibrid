@@ -150,8 +150,10 @@ const Pag2 = () => {
 
         <div className="container">
           <form>
-          <h2>Exames Físicos</h2>
-            <Label>PA Sentado:</Label>
+          <h2>EXAME FÍSICO</h2>
+          <div className='columnArea'>
+            <h3>DADOS VITAIS</h3>
+ <Label>PA Sentado:</Label>
             <Input type="text" name="paSentado" />
             
             <Label>PA Ortostatismo:</Label>
@@ -162,16 +164,21 @@ const Pag2 = () => {
             
             <Label>FR:</Label>
             <Input type="text" name="fr" />
-            
-            <Label>Inspeção:</Label>
+          </div>
+          <Label>INSPEÇÃO</Label>
             <Textarea name="inspecao" />
             
-            <Label>Palpação:</Label>
+            <Label>PALPAÇÃO</Label>
             <Textarea name="palpacao" />
             
-            <Label>Avaliação Sensorial - Propriocepção:</Label>
+            <Label>ACALIAÇÃO SENSORIAL - Propriocepção (Senso de Posição Articular):</Label>
             <Textarea name="propriocepcao" />
 
+          <div className='funcaoAplitude'>
+          <h3>Amplitude de Movimento</h3>
+          {/* função aqui */}
+
+          </div>
           </form>
         </div>
         <div className='paginationArea'>

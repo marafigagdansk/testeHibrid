@@ -160,16 +160,16 @@ const CadastroPaciente = () => {
             <Label>Idade:</Label>
             <Input type="number" name="idade" />
 
-            <Label>Anamnese:</Label>
+            <Label>ANAMNSE</Label>
             <Textarea name="anamnese" />
             
-            <Label>Teste MEEM:</Label>
+            <Label>Teste MEEM</Label>
             <Checkbox />
 
-            <Label>Medicamentos:</Label>
+            <Label>MEDICAMENTOS</Label>
             <Textarea name="medicamentos" />
             
-            <Label>Histórico de Doenças:</Label>
+            <Label>HISTÓRICO DE DOENÇAS</Label>
             <Textarea name="historicoDoencas" />
           </form>
 

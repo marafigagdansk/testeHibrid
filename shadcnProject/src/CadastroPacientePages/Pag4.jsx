@@ -150,38 +150,23 @@ const Pag4 = () => {
         </div>
 
         <div className="container">
-          <form>
-          <Label>Marcha Texto:</Label>
-            <Textarea name="marchaTexto" />
-            
-            <Label>Dispositivo de Auxílio à Marcha:</Label>
-            <Input type="text" name="auxilioMarcha" />
-            
-            <Label>Velocidade de Marcha:</Label>
-            <Input type="text" name="velocidadeMarcha" />
-            
-            <Label>Comprimento:</Label>
-            <Input type="text" name="comprimentoMarcha" />
-            
-            <Label>Avaliação Postural:</Label>
+          <form>    
+            <Label>AVALIAÇÃO POSTURAL</Label>
             <Textarea name="avaliacaoPostural" />
             
-            <Label>Avaliação Complementares:</Label>
+            <Label>AVALIAÇÃO COMPLEMENTARES</Label>
             <Textarea name="avaliacaoComplementares" />
             
-            <Label>Diagnóstico:</Label>
+            <Label>DIAGNÓSTICO FISIOTERAPÊUTICO</Label>
             <Textarea name="diagnostico" />
             
-            <Label>Fisioterapêutico:</Label>
-            <Textarea name="fisioterapeutico" />
-            
-            <Label>Prognóstico:</Label>
+            <Label>PROGNÓSTICO</Label>
             <Textarea name="prognostico" />
             
-            <Label>Objetivo do Tratamento:</Label>
+            <Label>OBJETIVOS DE TRATAMENTO</Label>
             <Textarea name="objetivoTratamento" />
             
-            <Label>Programa de Tratamento:</Label>
+            <Label>PROGRAMA DE TRATAMENTO</Label>
             <Textarea name="programaTratamento" />
             
             <button type="submit">Adicionar Paciente</button>

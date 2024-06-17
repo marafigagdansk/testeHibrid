@@ -151,32 +151,43 @@ const Pag3 = () => {
         </div>
 
         <div className="container">
-          <form>
-          <h3>Amplitude de Movimento</h3>
-            <Label>Direito:</Label>
-            <Input type="text" name="amplitudeMovimento.direito" />
+          <form>    
+            <Label>COMPRIMENTO MUSCULAR</Label>
+            <Textarea name="comprimentoMuscular" />
             
-            <Label>Esquerdo:</Label>
-            <Input type="text" name="amplitudeMovimento.esquerdo" />
+            <Label>FORÇA MUSCULAR</Label>
+            <Textarea  name="forcaMuscular" />
             
-            <Label>Comprimento Muscular:</Label>
-            <Input type="text" name="comprimentoMuscular" />
+            <h3>EQUILIBRIO</h3>
+            <div className='containerChange'>
+            <Input type="text" placeholder="Sistema Vestibular"/>
+            <Input type="text" placeholder="TUG Tarefa 1"/>
+            <Input type="text" placeholder="POMA Tinetti Equilíbrio"/>
+            <Input type="text" placeholder="Marcha"/>
+            <Input type="text" placeholder="Total"/>
+            <Input type="text" placeholder="Teste Apoio Unipodal D"/>
+            <Input type="text" placeholder="Esquerdo"/>
+            <Input type="text" placeholder="Teste Caminhada Tande"/>
+            </div>
             
-            <h3>Força Muscular</h3>
-            <Input type="text" placeholder="Exercício" name="forcaMuscular" />
+            <Label>Interpretação/observação</Label>
+            <Textarea/>
             
-            <h3>Equilíbrio</h3>
-            <Input type="text" placeholder="Exercício" name="equilibrio" />
-            
-            <Label>Observação:</Label>
-            <Textarea name="observacaoEquilibrio" />
-            
-            <h3>Funcionalidade</h3>
-            <Input type="text" placeholder="Exercício" name="funcionalidade" />
-            
-            <Label>Observação:</Label>
+            <h3>FUNCIONALIDADE</h3>
+            <Input type="text" placeholder="Escala de Lawton"/>
+            <Input type="text" placeholder="Indice de Barthel"/>
+            <Label>Interpretação/observação</Label>
             <Textarea name="observacaoFuncionalidade" />
             
+            <Label>Observação:</Label>
+            <Textarea/>
+            <h3>MARCHA</h3>
+            <Textarea/>
+            <Input type="text" placeholder="Dispositivo de Auxílio à Marcha"/>
+            <Input type="text" placeholder="Velocidade da Marcha"/>
+            <Label>Comprimento da Passada:</Label>
+            <Input type="text" placeholder="Direito"></Input>
+            <Input type="text" placeholder="Esquerdo"></Input>
           </form>
         </div>
         <div className='paginationArea'>
