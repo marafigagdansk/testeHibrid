@@ -55,7 +55,6 @@ const CadastroPaciente = () => {
     navigate('/cadastrar-paciente');
   };
 
-
   const paginationPag2 = () => {
     navigate('/pag2');
   };
@@ -152,6 +151,7 @@ const CadastroPaciente = () => {
 
         <div className="container">
           <h1>Adicionar Paciente</h1>
+
           <form>
             <h2>Dados Pessoais</h2>
             <Label>Nome:</Label>
@@ -159,27 +159,24 @@ const CadastroPaciente = () => {
             
             <Label>Idade:</Label>
             <Input type="number" name="idade" />
-            
-            <h2>Exames</h2>
+
             <Label>Anamnese:</Label>
             <Textarea name="anamnese" />
             
             <Label>Teste MEEM:</Label>
             <Checkbox />
+
+            <Label>Medicamentos:</Label>
+            <Textarea name="medicamentos" />
             
             <Label>Histórico de Doenças:</Label>
             <Textarea name="historicoDoencas" />
-            
-            <Label>Dados Vitais:</Label>
-            <Textarea name="dadosVitais" />
-
-            {/* cabo */}
-
           </form>
+
         </div>
         <div className='paginationArea'>
           <div className='pagination'>
-                    <Pagination>
+            <Pagination>
               <PaginationContent>
                 <PaginationItem>
                   <PaginationPrevious href="#" />
@@ -202,9 +199,8 @@ const CadastroPaciente = () => {
               </PaginationContent>
             </Pagination>
           </div>
-      </div>
         </div>
-        
+      </div>
     </>
   );
 };
