@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    width: 100vw;
+    height: 3.5vw;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3px;
+  }
+  
+  .scroll-m-20 {
+    width: 100px;
+  }
+
+  
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .columnArea {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .columnArea > div {
+    flex: 1;
+  }
+  
+  .sheet-container {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sheet-name-input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .amplitude-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .amplitude-table th,
+  .amplitude-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .amplitude-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .add-row-button,
+  .add-sheet-button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .paginationArea {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  

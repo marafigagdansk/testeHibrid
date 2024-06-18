@@ -96,11 +96,12 @@ const Pag2 = () => {
   return (
     <>
       <div className='geral'>
-        <div className='header'>
+      <div className='header'>
           <Button
             variant="ghost"
             onClick={handleAddPatient}
-            className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+          >
             Cards
           </Button>
           <div className="menu">
@@ -185,12 +186,11 @@ const Pag2 = () => {
             <Textarea name="propriocepcao"></Textarea>
 
             {sheets.map((sheet, sheetIndex) => (
-              <div className="funcaoAplitude" key={sheetIndex}>
+              <div className="sheet-container" key={sheetIndex}>
                 <div className="sheet-header">
-                  <h3>{sheet.name}</h3>
+                  <Input type="text" value={sheet.name} onChange={(e) => handleSheetNameChange(sheetIndex, e)} placeholder="Nome da Planilha" className="sheet-name-input" />
                   <Button type="button" variant="outline" onClick={() => handleRemoveSheet(sheetIndex)}><Trash className="h-4 w-4" /></Button>
                 </div>
-                <Input type="text" value={sheet.name} onChange={(e) => handleSheetNameChange(sheetIndex, e)} placeholder="Nome da Planilha" className="sheet-name-input" />
                 <table className="amplitude-table">
                   <thead>
                     <tr>
